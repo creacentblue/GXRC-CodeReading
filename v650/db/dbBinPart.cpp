@@ -13,6 +13,9 @@
 		load data(dbu,topBBox,numRow,numCol,binBBoxVV) from file
 		set tileW,tileH,isInit
 
+0082-0147
+	save()
+		reverse operation as load()
 
 0331-0343
 	getBinBBox(binId)
