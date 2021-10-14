@@ -2,7 +2,7 @@
 	header
 0018-0032
 	dbBinPart()
-		init dbBinPart
+		init dbBinPart as 0
 
 0070-0079
 	getBinId2D(binId,row//out,col//out)
