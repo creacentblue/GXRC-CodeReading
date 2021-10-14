@@ -12,5 +12,7 @@ This project is for learning purpose only.
 
 3.functions not understood yet are tagged by $! in the fornt
 
-4.use tab indent 
+4.TODO functions are tagged by $@ in the front
+
+5.use tab indent 
   
