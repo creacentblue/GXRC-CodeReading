@@ -1,6 +1,10 @@
 # GXRC-CodeReading
 
-some rules:
+## Declaration:
+
+This project is for learning purpose only.
+
+## some rules:
 
 1.blank-lines belong to former part
 
