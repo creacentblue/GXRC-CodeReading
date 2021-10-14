@@ -8,5 +8,5 @@ some rules:
 
 3.functions not understood yet are tagged by $! in the fornt
 
-4.dd
+4.use tab indent 
   
