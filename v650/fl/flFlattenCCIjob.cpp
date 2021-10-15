@@ -15,7 +15,9 @@
 		startFlatten()
 		m_skipInstHash=NULL
 0147-0191
-	
+	buildSkipInstHash(skipInstance)
+		if(!skipInstance.empty())
+			create skipInstHash
 0192-0231
 	startFlatten
 0232-0386
