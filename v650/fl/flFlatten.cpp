@@ -2,7 +2,7 @@
 	header
 0016-0035
 	flFlatten(topDesign,halo,binId,OA_FLOW)
-	CCI flow constructor
+		OA flow constructor
 0036-0055
 	flFlatten(cimain,halo,binId,CCI_FLOW)
 		CCI flow constructor
