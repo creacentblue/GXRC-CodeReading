@@ -15,4 +15,6 @@ This project is for learning purpose only.
 4.TODO functions are tagged by $@ in the front
 
 5.use tab indent 
-  
+
+6.NOW-TODO functions are tagged by $# in the front
+

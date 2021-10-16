@@ -1,0 +1,10 @@
+0089-0260
+	build()
+		for(begin,end,i)
+			sbBoxId1=m_shapeTouchedV[i].getsMasterId()
+			sbBoxId2=m_shapeTouchedV[i].getsSlaveId()
+			if(sbBoxId1==sbBoxId2)
+				continue
+			if(extrJob->isPin(sbBoxId1)||extrJob->isProbeNode(sbBoxId1)
+				continue
+			$#
