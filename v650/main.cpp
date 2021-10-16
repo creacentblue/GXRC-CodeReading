@@ -10,7 +10,7 @@
 		set OaDepCdsBinPath
 		finally run tcl or cmd
 			cmd: run rrMpFlow(argc,argv)
-			$@tcl:
+			$!tcl:
 0594-0617
 	setGexOptions(cmdFile,isMaster)
 		set logPath,rptPath and create the dirs
