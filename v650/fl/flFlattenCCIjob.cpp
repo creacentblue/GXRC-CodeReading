@@ -48,7 +48,7 @@
 			$!
 		return true
 0387-0494
-	flattenShapes(...)
+	flattenShapes(...)	//get trapz form shapes and reconstruct new shapes and save
 		for(cell.shapeTab,shape)
 			shape.get(shpBBox)
 			shpBBox.trans
@@ -72,6 +72,32 @@
 0495-0508
 	isOverlappedWithHaloBBox(geTrapz)
 0509-0643
+	flattenPinShapes(isTopCell,cell,oaTrans,iterms,termIdoffset,pinIdOffset,isSkipInstance)
+		for(cell.TermTab,term)
+			gTermId=i+termIdoffset
+			gUnetId=iterms[i].getUnetId
+			gLnetId=(isTop?term.getNetId:FL_NETID_STOP/*-2*/)
+			psTab=term.PinShapeTab
+			if(psTab.empty)
+				continue
+			for(psTab,pinShp)
+				maskNum=pinShp.first
+				pinTrapz=pinShp.second
+				pinTrapz.pinBBox trans&halfnode
+				if(isOutOfHaloBBox)
+					continue
+				if(isRect)
+					pin(pinBBox,maskNum,term.IOtype,gLnetId,gUnetId,term.isPG,gTermId)
+					pin.setVisible
+					m_bin->pushPinRec(pin,pair(0/*decapInstId*/,-1/*decapMasterId*/))
+				else
+					pinTrapz.slicedPinTrapzV trans&halfnode
+					for(slicedPinTrapzV,i)
+						pin(slicedPinTrapzV[i],...)
+						pin.setVisible
+	                                        m_bin->pushPinRec(pin,pair(0/*decapInstId*/,-1/*decapMasterId*/))
+
+
 	
 0644-0753
 	

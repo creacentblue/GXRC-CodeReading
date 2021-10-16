@@ -1,0 +1,9 @@
+0001-0017
+	header
+0018-0110
+	ioSaveNetwork
+		m_extrJob
+		m_dirname
+		m_nkFilePos
+		FILE:m_fp,m_fpSt,m_fpBn
+#finished
