@@ -71,6 +71,10 @@
 		return true
 0495-0508
 	isOverlappedWithHaloBBox(geTrapz)
+		if(shp.isTrapz45())
+			return shp.isIntersect(haloBBox)
+		else
+			return shp.overlaps(haloBBox)
 0509-0643
 	flattenPinShapes(isTopCell,cell,oaTrans,iterms,termIdoffset,pinIdOffset,isSkipInstance)
 		for(cell.TermTab,term)
