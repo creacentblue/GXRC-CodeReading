@@ -12,5 +12,18 @@
 		get binId
 		xtExtract.run(binId)
 
+0401-0449
+	mpStitchJob::run()
+		stStitch stitch
+		stitch.run()
 
-		
+0462-0560
+	mpOutputJob::run()
+		if(extractType==SOLVER)
+			rrIoOutSpice()
+		if(DSPF)
+			rrIoOutDspf()
+		if(SPEF)
+			rrIoOutSpef()
+		rrIoOutInst()
+	
