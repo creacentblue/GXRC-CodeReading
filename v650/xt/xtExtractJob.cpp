@@ -112,4 +112,16 @@
 			shapeTouchedV.insert(sb.shapeTouchedV())
 		$@
 		return true
-				
+3976-4048
+	createEnvShapeNetworks(shapeTouchedV)
+		for (shapeTouchedV,i)
+			netId=shapeTouchedV[i].getNetId()
+			if(netId!=preNetId)//preNetid is gloabalNetId
+				end=i
+				localNetId=global2LocalNetId(preNetId)
+				net=m_netTabT[localNetId]
+				buildOneRLCnetwork(shapeTouchedV,net,begin,end,prevNetId)
+				begin=end
+			preNetId=netId
+		return true
+#finished

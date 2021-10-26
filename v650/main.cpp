@@ -14,3 +14,4 @@
 0594-0617
 	setGexOptions(cmdFile,isMaster)
 		set logPath,rptPath and create the dirs
+
